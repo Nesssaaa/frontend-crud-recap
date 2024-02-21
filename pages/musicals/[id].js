@@ -1,10 +1,14 @@
 import { useRouter } from "next/router";
-import data from "../../data.json";
 
-export default function SingleMusicalPage({}) {
+export default function SingleMusicalPage({ getMusical }) {
   const router = useRouter();
   const { id } = router.query;
-  const musical = data.find((musical) => musical.id === id);
+
+  const musical = getMusical(id);
+  if (!musical) {
+    return <h1>Musical not found</h1>;
+  }
+
   return (
     <>
       <h1>{musical.title}</h1>
