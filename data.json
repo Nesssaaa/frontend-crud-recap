@@ -1,1 +1,34 @@
-[]
+[
+  {
+    "id": "1",
+    "title": "Der große Gatsby",
+    "description": "Tanztheater",
+    "date": "2024-03-01 at 15:00",
+    "location": "Deutsches Theater",
+    "price": 59
+  },
+  {
+    "id": "2",
+    "title": "Footloose",
+    "description": "Musical",
+    "date": "2024-03-16 at 19:30",
+    "location": "Deutsches Theater",
+    "price": 89
+  },
+  {
+    "id": "3",
+    "title": "Quatsch Comedy Club",
+    "description": "Comedy Show",
+    "date": "2024-02-23 at 19:30",
+    "location": "Werk 7",
+    "price": 20
+  },
+  {
+    "id": "4",
+    "title": "Italia con Amore",
+    "description": "Italo-Pop-Musical",
+    "date": "2024-06-03 at 19:30",
+    "location": "Komödie im Bayerischen Hof",
+    "price": 43
+  }
+]

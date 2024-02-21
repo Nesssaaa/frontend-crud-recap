@@ -5,12 +5,16 @@ import data from "../data.json";
 import "../styles/global.css";
 
 export default function App({ Component, pageProps }) {
-  // store the initial data in the state
+  const [musicals, setMusicals] = useState(data);
   return (
     <>
       <Nav />
       <main>
-        <Component {...pageProps} />
+        <Component
+          musicals={musicals}
+          setMusicals={setMusicals}
+          {...pageProps}
+        />
       </main>
       <Footer />
     </>
