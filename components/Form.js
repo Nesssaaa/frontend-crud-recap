@@ -14,7 +14,7 @@ export default function Form({ onSubmit, musical = {} }) {
         <input
           name="title"
           required
-          placeholder="Enter the album title"
+          placeholder="Enter the musical title"
           defaultValue={musical.title}
         />
       </label>
