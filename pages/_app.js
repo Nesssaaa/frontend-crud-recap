@@ -12,11 +12,27 @@ export default function App({ Component, pageProps }) {
     return musical;
   }
 
+  function editMusicalPage(id, data) {
+    const updatedMusicals = musicals.map((musical) => {
+      if (musical.id === id) {
+        return { ...musical, ...data };
+      } else {
+        return musical;
+      }
+    });
+    setMusicals(updatedMusicals);
+  }
+
   return (
     <>
       <Nav />
       <main>
-        <Component musicals={musicals} getMusical={getMusical} {...pageProps} />
+        <Component
+          musicals={musicals}
+          getMusical={getMusical}
+          editMusicalPage={editMusicalPage}
+          {...pageProps}
+        />
       </main>
       <Footer />
     </>

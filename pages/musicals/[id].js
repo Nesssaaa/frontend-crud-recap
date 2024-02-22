@@ -1,4 +1,5 @@
 import { useRouter } from "next/router";
+import Link from "next/link";
 
 export default function SingleMusicalPage({ getMusical }) {
   const router = useRouter();
@@ -16,6 +17,9 @@ export default function SingleMusicalPage({ getMusical }) {
       <p>When: {musical.date}</p>
       <p>Where: {musical.location}</p>
       <p>Price in EUR: {musical.price}</p>
+      <li>
+        <Link href={`/musicals/${id}/edit`}>Edit</Link>
+      </li>
     </>
   );
 }
